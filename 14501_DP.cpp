@@ -1,4 +1,4 @@
-//18.10.09 BOJ #No.14501 <퇴사>
+//18.10.09 BOJ #No.14501 <퇴사> 2306-2359
 //Coments : 점화식 세우는 과정 이해 및 연습 필요
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
