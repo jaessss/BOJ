@@ -1,5 +1,6 @@
 //18.10.09 #No.15686 <치킨배달> 1601-1637
 //Coments : 최대 M개이지만 M개 미만을 탐색할 필요는 없음
+//조합 구현~ DFS로도 해보기
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <iostream>
