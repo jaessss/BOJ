@@ -1,7 +1,10 @@
 //18.10.10 #No.14502 <연구소>
 //Coments : 쉬프트 비트연산은 32비트까지만?
-//벽3개 세우는 조합 경우의수 -> for문으로 처리...
-//vector<int> ::size_type i
+//벽3개 세우는 조합 경우의수 -> for문으로 처리...(DFS나 비트마스킹보다 더 빠름, 뽑아야되는 수(3)가 적을때는 for문쓴다생각)
+//6중for문 쓰는 것보다는 빈공간을 벡터로 저장해서 3중for문으로 처리
+//구조체나 2차원 배열 선언 이외에 vector<vector<>>꼴의 2중 벡터나 pair 쓰는 법도 익히기
+//iterator대신 반복문으로 벡터 탐색할 때 변수선언 요롷게 vector<int> ::size_type i
+//바이러스 확산되는 과정 구현할때 이 경우 BFS보다 DFS가 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <iostream>
