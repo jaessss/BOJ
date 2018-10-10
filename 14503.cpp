@@ -1,6 +1,6 @@
 //18.10.10 #No.14503 <로봇청소기> 1710-1852
 //Coments : while문 혹은 DFS
-//DFS에서 왜 무한뤂...?
+//DFS에서 왜 무한뤂...?  --> DFS 구현시 종료조건과 그 이외 더 딥하게 진행해야하는 경우를 if else로 나눠서 구현하도록
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <iostream>
@@ -20,8 +20,8 @@ int dr[4] = { 0, -1, 0, 1 };
 int dc[4] = { -1, 0, 1, 0 };
 
 void DFS(int r, int c, int dir, int rotate_cnt){
-	if (ans) return;/////////////////////////////
-	if (rotate_cnt >= 4 && !ans){
+//	if (ans) return;/////////////////////////////
+	if (rotate_cnt >= 4){
 		int rr = r + dr[(dir + 3) % 4];
 		int cc = c + dc[(dir + 3) % 4];
 		if (map[rr][cc]==2) DFS(rr, cc, dir, 0);
@@ -30,13 +30,13 @@ void DFS(int r, int c, int dir, int rotate_cnt){
 			return;
 		}
 	}
-
-	map[r][c] = 2;
-	int rr = r + dr[dir];
-	int cc = c + dc[dir];
-	if (map[rr][cc] == 0) DFS(rr, cc, (dir + 3) % 4, 0);
-	else DFS(r, c, (dir + 3) % 4, rotate_cnt + 1);
-
+	else{
+		map[r][c] = 2;
+		int rr = r + dr[dir];
+		int cc = c + dc[dir];
+		if (map[rr][cc] == 0) DFS(rr, cc, (dir + 3) % 4, 0);
+		else DFS(r, c, (dir + 3) % 4, rotate_cnt + 1);
+	}
 }
 
 int main(void)
