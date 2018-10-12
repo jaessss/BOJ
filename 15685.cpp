@@ -1,5 +1,6 @@
 //18.10.12 #No.15685 <드래곤 커브> 1010-1123
 //Coments : 규칙파악이 관건인 문제.. 초기 시작점이 각 세대 마지막 점으로 이동하는 점!
+//for (int j = now_size - 2; j >=0; j--){  -->> 감소식으로 반복문 돌릴때는 unsigined면 안됨(vector<int> ::size_type)
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <iostream>
