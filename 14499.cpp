@@ -1,4 +1,4 @@
-//18.10.13 #No.14499 <주사위 굴리기>
+//18.10.13 #No.14499 <주사위 굴리기> 2045-2310
 //Coments : 초기 시뮬문제, 머릿속으로 생각하기보다 종이에 써서 도표화
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
