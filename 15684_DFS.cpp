@@ -16,6 +16,7 @@
 #define MAXH 30 + 1
 #define INF 0x7fffffff
 using namespace std;
+vector<pair<int, int>> temp_vec;
 int ans;
 int N, M, H;
 int map[MAXH][MAXN];
